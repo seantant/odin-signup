@@ -1,0 +1,153 @@
+@font-face {
+    font-family: 'Abel';
+    src: url('fonts/Abel-Regular.woff2') format('woff2'),
+        url('fonts/Abel-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Norse';
+    src: url('fonts/Norse-Bold.woff2') format('woff2'),
+        url('fonts/Norse-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Abel;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+h1 {
+    font-family: Norse;
+    font-weight: bold;
+    color: white;
+    font-size: 4rem;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+a {
+    color: white;
+}
+
+#graphics {
+    display: flex;
+    flex-direction: column;
+    background-image: url("images/city.jpg");
+    background-size: 25vw 100vh;
+    height: 100vh;
+    width: 25vw;
+}
+
+#logo {
+    height: 5rem;
+    width: auto;
+}
+
+#logo-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,.5);
+    margin-top: 7rem;
+    padding: 24px;
+}
+
+#photo-cred {
+    margin-top: auto;
+    margin-bottom: 12px;
+    color: white;
+    text-align: center;
+}
+
+.credit {
+    font-size: 1rem;
+}
+
+#content {
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.description {
+    padding-left: 2rem;
+    padding-top: 1.5rem;
+    max-width: 50vw;
+}
+
+#callout {
+    width: 100%;
+}
+
+form {
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    margin-right: 3rem;
+}
+
+#form-controls {
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 4px 4px 10px gray;
+    padding: 2rem;
+    padding-right: 5rem;
+    row-gap: 1rem;
+}
+
+input {
+    font-size: 1.5rem;
+    border-radius: 4px;
+    border: 2px solid #90613d;
+}
+
+.button {
+    font-size: 1rem;
+    margin: 2rem;
+    margin-bottom: 1rem;
+    padding: 12px 32px;
+    border-radius: 8px;
+    border: 2px solid #90613d;
+    background-color: #90613d;
+    color: white;
+}
+
+#login {
+    margin: 2rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+#login-link {
+    color: #90613d;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #56a2f3;
+    box-shadow: 4px 4px 10px gray;
+}
